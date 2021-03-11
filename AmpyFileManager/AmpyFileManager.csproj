@@ -133,6 +133,7 @@
     <EmbeddedResource Include="TerminalForm.resx">
       <DependentUpon>TerminalForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Release.zip" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

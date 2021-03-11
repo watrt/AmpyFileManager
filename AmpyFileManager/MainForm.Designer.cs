@@ -73,6 +73,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.tmrMessage = new System.Windows.Forms.Timer(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pnlToolbar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainSplitter)).BeginInit();
@@ -481,6 +482,7 @@
             // 
             // pnlFileStatus
             // 
+            this.pnlFileStatus.Controls.Add(this.linkLabel1);
             this.pnlFileStatus.Controls.Add(this.panel10);
             this.pnlFileStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlFileStatus.Location = new System.Drawing.Point(0, 648);
@@ -591,6 +593,18 @@
             this.tmrMessage.Interval = 800;
             this.tmrMessage.Tick += new System.EventHandler(this.tmrMessage_Tick);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(589, 16);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(131, 15);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "http://付坤.中国";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -621,6 +635,7 @@
             this.pnlSaveMessage.ResumeLayout(false);
             this.pnlSaveMessage.PerformLayout();
             this.pnlFileStatus.ResumeLayout(false);
+            this.pnlFileStatus.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.pnlFileToolbar.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -674,5 +689,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnBackupScript;
         private System.Windows.Forms.Button btnRestoreScript;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
