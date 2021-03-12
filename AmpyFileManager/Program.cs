@@ -20,7 +20,7 @@ namespace AmpyFileManager
             ESPRoutines ESP = new ESPRoutines();
             while (ESP.COMM_PORT == "")
             {
-                MessageBox.Show("Must select the COM port your device is on.");
+                MessageBox.Show("必须选择COM端口设备。");
                 ESP = new ESPRoutines();
             }
 
